@@ -4,9 +4,9 @@
 
 In my solution, I didn't completely solve the problem as requested. 
 The program is able to accept input from `stdin`, direct output to `stdout`, and 
-errors to `stderr`. The output to `stdout` is in the requested nomalized CSV format.
+errors to `stderr`. The output to `stdout` is in the requested normalized CSV format.
 
-However, the issue I ran into was in trying to read the broken UTF-8 CSV file from `stdin`. I've take some notes on to how to resolve this issue, but was not able to complete this in the alloted 4 hours.
+However, the issue I ran into was in trying to read the broken UTF-8 CSV file from `stdin`. I've taken some notes on to how to resolve this issue, but was not able to complete this in the allotted 4 hours.
 
 
 ## Environment Used
@@ -34,8 +34,8 @@ source env/bin/activate
 ### Download repo from GitHub
 
 ```
-git clone <insert>
-cd <folder>
+git clone https://github.com/jacquelineflemming/csv_utf8_parser.git
+cd csv_utf8_parser
 pip install -r requirements.txt
 ```
 
