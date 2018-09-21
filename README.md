@@ -8,6 +8,8 @@ errors to `stderr`. The output to `stdout` is in the requested normalized CSV fo
 
 However, the issue I ran into was in trying to read the broken UTF-8 CSV file from `stdin`. I've taken some notes on to how to resolve this issue, but was not able to complete this in the allotted 4 hours.
 
+I also have one question as I'm re-reading the problem. The `FooDuration` and `BarDuration` columns are times (assumed to be in US/Pacific), but there weren't specfic instructions to convert to US/Eastern therefore, were left as is. 
+
 
 ## Environment Used
 

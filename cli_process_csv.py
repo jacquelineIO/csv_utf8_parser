@@ -30,9 +30,6 @@ for row in csv_reader:
         dt = datetime.datetime.strptime(row['Timestamp'], '%m/%d/%y %H:%M:%S %p')
         loc_dt = pacific.localize(dt)
         eastern_dt = loc_dt.astimezone(eastern)
-        dt = eastern_dt
-        dt.isoformat()
-        #outrow['Timestamp'] =  dt.isoformat()
         outrow['Timestamp'] =  eastern_dt.isoformat()
 
         # * The Address column should be passed through as is, except for
