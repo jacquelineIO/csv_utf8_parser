@@ -16,6 +16,7 @@ outfmt = '%Y-%m-%dT%H:%M:SS.%f'
 # Read from STDIN and decode to UTF-8
 data = sys.stdin.buffer.read()
 utf8_decode = data.decode("utf-8", 'replace')
+#utf8_decode = data.decode("utf-8", 'backslashreplace')
 csv_data = utf8_decode
 
 # Process csv_data with DictReader

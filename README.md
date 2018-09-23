@@ -52,3 +52,19 @@ cat sample.csv | python cli_process_csv.py > output.csv
 ```
 vim output.csv
 ```
+
+## Solution Part 2
+
+I believe this part took me longer than 4 hours to solve. I would like to also include it in this GitHub. Please ignore if not allowed.
+
+When decoding the broken CSV file into UTF-8 no replacement characters are used. It seems that the byte values were
+translated to a valid UTF-8 character.
+
+The solution in part 2 was to read everything in bytes from `stdin` and then use the python function `decode` to convert to UTF-8 and
+I selected the errors option to `replace`.
+
+### Run the part 2 solution
+
+```
+cat sample-with-broken-utf8.csv | python cli_process_csv2.py > output2.csv
+```
